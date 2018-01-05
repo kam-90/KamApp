@@ -1,0 +1,45 @@
+<div class="container">
+        
+            <!-- Page Heading/Breadcrumbs -->
+            <h1 class="mt-4 mb-3">Projects
+                <small>Over the years i have worked on Various Academic, Office & Personel Projects</small>
+            </h1>
+            <br>
+            <div class="row">
+                <div class="col-md-4" *ngFor="let project of projects">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-header-orange">
+                                <h1 class="card-heading">{{project.project_name}}</h1>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-p">
+                                    {{project.project_description}}
+                                </p>
+                            </div>
+                            <br>
+                            <div class="card-footer">
+                                <button (click)="openModal(template, project)" class="btn btn-primary">Learn More</button>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <br>
+            <ng-template #template>
+                <div class="modal-header">
+                    <h4 class="modal-title pull-left">Project Name: {{currentModal.project_name}}</h4>
+                    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><img src={{currentModal.image}} class="center-block" style="width: 400px; height: 300px; "></p>
+                    <p><b>Project Description: </b>{{currentModal.project_description}}</p>
+                    <p><b>Technologies Involved:</b> {{currentModal.technologies_involved}}</p>
+                    <p><b>Project Link:</b><a href={{currentModal.github_link}} target="_blank">{{currentModal.github_link}}</a></p>
+                </div>
+            </ng-template>
+        </div>

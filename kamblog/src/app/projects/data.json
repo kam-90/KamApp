@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "project_name":"Airline Reservation System", 
+        "project_description":"Well the project is demonstration of how airline tickets are sold online.It has admin panel to create tickets for one way as well as two way.", 
+        "technologies_involved": "PHP-MYSQL-BOOTSTRAP-JAVASCRIPT-HTML-CSS", 
+        "github_link": "https://github.com/angular/angular/tree/5.1.0",
+        "image" : "assets/arp.PNG"
+    },
+    {
+        "id": 2,
+        "project_name":"Soli Report", 
+        "project_description":"Soli is a new startup in boston. I had the chance to compile a soli IT management report. Soli gives customers carbon points on purchases.", 
+        "technologies_involved": "Project Libre, Version One", 
+        "github_link": "https://www.solipoints.com/",
+        "image" : "assets/soli.PNG"
+    },
+    {
+        "id": 3,
+        "project_name":"Entertainer", 
+        "project_description":"This project was done by me during my job at Eureke. I had to develop mobile application for windows phone app of entertainer. ", 
+        "technologies_involved": "XAML-C#-APPboy for Analytics", 
+        "github_link": "https://www.theentertainerme.com/home",
+        "image" : "assets/ent.PNG"
+    },
+    {
+        "id": 4,
+        "project_name":"Hospital Management System", 
+        "project_description":"This was a pure database management system. This was a course project. i had to design various complex queries, stored procedures etc.", 
+        "technologies_involved": "SQL SERVER 2012", 
+        "github_link": "https://github.com/angular/angular/tree/5.1.0",
+        "image" : "assets/hms.png"
+    },
+    {
+        "id": 5,
+        "project_name":"Taekwondo web Application", 
+        "project_description":"Well this was an interesting project as i had to redesign the current application and choose the design to look like Single page app.", 
+        "technologies_involved": "SPA USING BOOTSTRAP-HTML5-JAVASCRIPT-CSS3", 
+        "github_link": "https://github.com/kam-90/Webapplication1",
+        "image" : "assets/web.PNG"
+    },
+    {
+        "id": 6,
+        "project_name":"Enterprise Architecture design", 
+        "project_description":"This was a report with various uml design elements. It was about NetSol Company which is USA based company. I studied various architecture designs.", 
+        "technologies_involved": "UML DESIGN-Process Design-Architecture Design ", 
+        "github_link": "http://www.netsoltech.com/",
+        "image" : "assets/net.png"
+    },
+    {
+        "id": 7,
+        "project_name":"Shopping Cart", 
+        "project_description":"As i learned Node js for first time so developed this simple application which helped me in learning different aspects of Node js.", 
+        "technologies_involved": "Node js", 
+        "github_link": "https://github.com/kam-90/shopping-Cart",
+        "image" : "assets/shop.png"
+    },
+    {
+        "id": 8,
+        "project_name":"Job search application", 
+        "project_description":"This was my final year project. It was project based on job seekers and job search app.It was a team project and built using Lamp technology.", 
+        "technologies_involved": "PHP-LAMPTSTACK-MYSQL", 
+        "github_link": "https://github.com/angular/angular/tree/5.1.0",
+        "image" : "assets/job.png"
+    },
+    {
+        "id": 9,
+        "project_name":"Course & Student application", 
+        "project_description":"Well this was a Node.js application in which i designed api for course & student CRUD operation. I developed Api to fetch data from mongodb.", 
+        "technologies_involved": "NodeJs-ExpressJs-MongoDBJs", 
+        "github_link": "https://github.com/kam-90",
+        "image" : "assets/std.png"
+    }
+]

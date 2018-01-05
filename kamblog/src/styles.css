@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+pre, pre code {
+    display: block;
+    overflow-x: auto;
+    color: white;
+    padding: 0.5em;
+    background: rgb(51, 51, 51);
+    outline: none;
+    white-space: pre;
+    
+}
+pre {
+    overflow: hidden;
+}
+/*
+@import url('https://highlightjs.org/static/demo/styles/agate.css');
+*/
+
+@import "~highlight.js/styles/agate.css";

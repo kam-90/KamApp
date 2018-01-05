@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-10 col-md-offset-1 col-xl-8 col-xl-offset-2">
+      <div *ngIf="!submitted">
+          <h2>Add new Code Snippet</h2>
+
+          <form class="form-horizontal">
+              <div class="form-group">
+                <label for="Heading" class="col-sm-2 control-label">Heading</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="Heading" placeholder="Heading" [(ngModel)]="heading">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="Description" class="col-sm-2 control-label">Description</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="Description" placeholder="Description" [(ngModel)]="description">
+                </div>
+              </div>
+              <div class="form-group">
+                  <label for="Language" class="col-sm-2 control-label">Language</label>
+                  <div class="col-sm-4">
+                    <select class="form-control" name="Language" [(ngModel)]="usingLanguage">
+                        <option *ngFor="let lang of programmingLanguages" [ngValue]="lang">{{lang | titlecase}}</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label class="col-sm-2 control-label">Code</label>
+              </div>
+            </form>
+            <div class="container">
+<p>Important! Please use simple code editor to copy code from. Notepad++ will work fine. Don't copy from VS code as it adds extra tags.</p>
+            <pre style ="min-height:500px"><code 
+              contenteditable="true"
+              mwlHighlightJs [source]="source" 
+              [language]="usingLanguage"
+              (blur) = "update($event)"
+              (mouseleave) = "update($event)"
+              (keydown) = "newline($event)"
+              >
+            </code></pre>
+          </div>
+            <button type="button" class="btn btn-default" (click)="submit()">Submit</button>
+      </div>
+
+      <div *ngIf="submitted">
+          <h2>Submitted successfully!</h2>
+          <button type="button" class="btn btn-default" (click)="submitNew()">Submit new</button>
+      </div>
+
+    </div>
+  </div>
+</div>
